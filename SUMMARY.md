@@ -133,6 +133,7 @@
       * [Add custom route](guides/plugins/plugins/administration/add-custom-route.md)
       * [Writing templates](guides/plugins/plugins/administration/writing-templates.md)
       * [Add menu module](guides/plugins/plugins/administration/add-custom-module.md)
+      * [Customize modules](guides/plugins/plugins/administration/customizing-modules.md)
       * [Add menu entry](guides/plugins/plugins/administration/add-menu-entry.md)
       * [Add tab to existing module](guides/plugins/plugins/administration/add-new-tab.md)
       * [Customizing components](guides/plugins/plugins/administration/customizing-components.md)

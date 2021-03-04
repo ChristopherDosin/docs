@@ -141,6 +141,7 @@
       * [Adding snippets](guides/plugins/plugins/administration/adding-snippets.md)
       * [Add custom styles](guides/plugins/plugins/administration/add-custom-styles.md)
       * [Add filter](guides/plugins/plugins/administration/add-filter.md)
+      * [Using filter](guides/plugins/plugins/administration/using-filter.md)
     * [Storefront](guides/plugins/plugins/storefront/README.md)
       * [Add custom controller](guides/plugins/plugins/storefront/add-custom-controller.md)
       * [Override existing routes](guides/plugins/plugins/storefront/override-existing-routes.md)

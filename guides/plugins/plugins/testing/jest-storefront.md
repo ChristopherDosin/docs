@@ -8,13 +8,19 @@ that another change can't break your code's functionality with their code.
 With a good test coverage you gain confidence to deploy a stable software without the requirement to manually test 
 every change. This little guide will guide you how to write unit tests for the administration in Shopware 6.
 
-We are using [Jest](https://jestjs.io/) as our testing framework. It's a solid foundation and widely used by many 
-developers.
+We are using JestJS as our testing framework as it's a solid foundation and widely used by many developers.
+
+{% embed url="https://jestjs.io" %}
 
 ## Prerequisites
 
 Before you are reading this guide you have to make sure you understand the basics of unit tests and how Jest works.
-You can find a good source for best practices in this Github Repo: [https://github.com/goldbergyoni/javascript-testing-best-practices](https://github.com/goldbergyoni/javascript-testing-best-practices)
+You can find a good source for best practices in this Github Repo:
+
+{% embed url="https://github.com/goldbergyoni/javascript-testing-best-practices" %}
+
+In addition, you need a running Shopware 6 installation. Your repository used for that should be based on development template, as we will to use some scripts provided by it.
+
 
 ## Test structure
 
@@ -23,6 +29,9 @@ a separate test suite if you need. The following configuration matches our core 
 little starting point. In Shopware's platform repository, you will find the storefront unit tests in the following 
 directory: `platform/src/Storefront/Resources/app/storefront/test`
 It may be a good idea to resemble this directory structure, but it's no fixed requirement.
+
+Inside the test directory, you add a test for a file in the same path as the source path. You see: 
+When creating the file, the name should also be the same as the component has with an additional `test`.
 
 The exact test folder structure looks like seen below, starting in `Storefront` bundle:
 ```bash
@@ -144,6 +153,30 @@ describe('feature.helper.js', () => {
 {% endcode %}
 
 That's basically it! We wrote our first jest unit test in the Storefront.
+
+## Mocking Javascript plugins in your test
+
+
+
+## Executing the tests
+
+Before you are using the commands make sure that you installed all dependencies for your storefront. If you haven't 
+done this already, then you can do it running the following PSH command: 
+
+```bash
+> ./psh.phar administration:install-dependencies
+```
+
+In order to run jest unit tests of the storefront, you can use the psh commands provided by our development template.
+This command executes all unit tests and shows you the complete code coverage.
+
+```bash
+> ./psh.phar administration:unit
+```
+
+{% hint style="info" %} This only applies to the Shopware provided Storefront! If you use unit tests in your Plugin, 
+you might need to write your own scripts for that. {% endhint %}
+
 
 ## Next steps
 

@@ -8,7 +8,7 @@ All you need for this guide is a running Shopware 6 instance and full access to 
 
 ## Video
 
-this guide is also available as a Video:
+This guide is also available as a video:
 
 {% embed url="https://www.youtube.com/watch?v=wfBuWdff35c" %}
 
